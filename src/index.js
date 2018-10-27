@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'vazir-font/dist/font-face.css';
+import 'normalize.css';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';

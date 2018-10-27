@@ -1,3 +1,8 @@
+:root {
+  --black: #191919;
+  --blue: hsl(217, 100%, 54%);
+}
+
 body {
   font-family: 'Vazir', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",

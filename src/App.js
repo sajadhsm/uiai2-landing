@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import Hero from './components/Hero/Hero';
+
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>دومین دوره مسابقه هوش مصنوعی دانشگاه اصفهان</h1>
+        <Hero />
       </div>
     );
   }

@@ -5,6 +5,7 @@ import Hero from './components/Hero/Hero';
 import Description from './components/Description/Description';
 import Awards from './components/Awards/Awards';
 import CountDown from './components/CountDown/CountDown';
+import Staffs from './components/Staffs/Staffs';
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
         <Description />
         <Awards />
         <CountDown />
+        <Staffs />
       </div>
     );
   }

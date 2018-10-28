@@ -1,0 +1,30 @@
+.staffsSection {
+  padding: 3rem 0.5rem;
+  text-align: center;
+}
+.staffs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.staff {
+  box-sizing: border-box;
+  padding: 0.5rem;
+  flex-basis: 25%;
+}
+.staffImage {
+  max-width: 150px;
+  border-radius: 50%;
+  filter: saturate(0.1);
+  transition: filter 0.23s;
+}
+.staffImage:hover {
+  filter: saturate(1);
+}
+.staffName {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+.staffDuty {
+  margin: 0;
+}

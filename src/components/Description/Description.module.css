@@ -1,0 +1,21 @@
+.decriptionSection {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.imageBox {
+  flex-basis: 35%;
+}
+.textBox {
+  flex-basis: 64%;
+}
+
+@media screen and (max-width: 768px) {
+  .decriptionSection {
+    flex-direction: column;
+  }
+  .decriptionSection > div {
+    flex-basis: 1;
+  }
+}

@@ -4,6 +4,7 @@ import './App.css';
 import Hero from './components/Hero/Hero';
 import Description from './components/Description/Description';
 import Awards from './components/Awards/Awards';
+import CountDown from './components/CountDown/CountDown';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <Hero />
         <Description />
         <Awards />
+        <CountDown />
       </div>
     );
   }

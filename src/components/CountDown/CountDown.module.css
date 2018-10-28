@@ -1,0 +1,16 @@
+.countdownSection {
+  padding: 4rem 0;
+  text-align: center;
+  background: #191919;
+  color: #fff;
+}
+
+.title {
+  margin: 0 0 1.5rem;
+  font-size: 2rem;
+}
+
+.clock {
+  margin: 0;
+  font-size: 5rem;
+}

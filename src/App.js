@@ -6,6 +6,7 @@ import Description from './components/Description/Description';
 import Awards from './components/Awards/Awards';
 import CountDown from './components/CountDown/CountDown';
 import Staffs from './components/Staffs/Staffs';
+import Gallery from './components/Gallery/Gallery';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
         <Awards />
         <CountDown />
         <Staffs />
+        <Gallery />
       </div>
     );
   }

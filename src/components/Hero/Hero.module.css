@@ -5,7 +5,8 @@
   align-items: center;
   text-align: center;
   height: 100vh;
-  background: var(--black);
+  background: url('./bgPattern.jpg'), var(--black);
+  background-blend-mode: soft-light;
 }
 
 .hero img {

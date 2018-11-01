@@ -19,3 +19,17 @@
   text-shadow: 0px 0px 55px var(--blue);
   font-size: 3rem;
 }
+
+.regButton {
+  font-size: 1.25rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 4px;
+  background: hsl(217, 100%, 54%);
+  color: #fff;
+  cursor: pointer;
+  transition: box-shadow 0.23s;
+}
+.regButton:hover {
+  box-shadow: 0px 0px 55px 0 var(--blue);
+}

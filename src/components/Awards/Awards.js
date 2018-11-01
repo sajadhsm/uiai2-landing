@@ -11,20 +11,20 @@ class Awards extends PureComponent {
           <div className={styles.cards}>
             <div className={styles.card}>
               <h4>تیم اول</h4>
-              <h3>۳۰۰۰۰۰۰</h3>
-              <span>تومان</span>
+              <h3>۳</h3>
+              <span>میلیون تومان</span>
             </div>
 
             <div className={styles.card}>
               <h4>تیم دوم</h4>
-              <h3>۲۰۰۰۰۰۰</h3>
-              <span>تومان</span>
+              <h3>۲</h3>
+              <span>میلیون تومان</span>
             </div>
 
             <div className={styles.card}>
               <h4>تیم سوم</h4>
-              <h3>۱۰۰۰۰۰۰</h3>
-              <span>تومان</span>
+              <h3>۱</h3>
+              <span>میلیون تومان</span>
             </div>
           </div>
         </div>

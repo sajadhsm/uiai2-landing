@@ -7,17 +7,33 @@ import Awards from './components/Awards/Awards';
 import CountDown from './components/CountDown/CountDown';
 import Staffs from './components/Staffs/Staffs';
 import Gallery from './components/Gallery/Gallery';
+import FormModal from './components/FormModal/FormModal';
 
 class App extends Component {
+  state = {
+    modalOpen: false,
+  };
+
+  onOpenModal = () => {
+    this.setState({ modalOpen: true });
+  };
+
+  onCloseModal = () => {
+    this.setState({ modalOpen: false });
+  };
+
   render() {
     return (
       <div className="App">
-        <Hero />
+        <Hero onOpenModal={this.onOpenModal} />
         <Description />
         <Awards />
         <CountDown />
         <Staffs />
         <Gallery />
+        <FormModal
+          open={this.state.modalOpen}
+          onClose={this.onCloseModal} />
       </div>
     );
   }

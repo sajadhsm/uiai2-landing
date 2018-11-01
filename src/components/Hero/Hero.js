@@ -8,6 +8,7 @@ class Hero extends PureComponent {
       <section className={styles.hero}>
         <img src={logo} alt="UIAI2 Logo"/>
         <h1>دومین دوره مسابقات چالشی<br/>هوش مصنوعی دانشگاه اصفهان</h1>
+        <button onClick={this.props.onOpenModal}>ثبت نام</button>
       </section>
     );
   }

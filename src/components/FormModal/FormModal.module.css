@@ -48,3 +48,9 @@
 .submitButton:hover {
   background: hsl(217, 100%, 50%);
 }
+
+@media screen and (max-width: 768px) {
+  .modalWrapper {
+    min-width: initial;
+  }
+}

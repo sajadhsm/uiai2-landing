@@ -1,5 +1,5 @@
 .staffsSection {
-  padding: 3rem 0.5rem;
+  padding: 5rem 10px;
   text-align: center;
 }
 .staffs {
@@ -10,12 +10,12 @@
 .staff {
   box-sizing: border-box;
   padding: 0.5rem;
-  flex-basis: 25%;
+  flex-basis: 20%;
 }
 .staffImage {
-  max-width: 150px;
+  max-width: 125px;
   border-radius: 50%;
-  filter: saturate(0.1);
+  filter: saturate(0.3);
   transition: filter 0.23s;
 }
 .staffImage:hover {

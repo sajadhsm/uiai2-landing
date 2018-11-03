@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import styles from './Staffs.module.css';
-import testImage from './me2.jpg';
+import Persons from './Persons';
 
 class Staffs extends PureComponent {
   render() {
@@ -9,36 +9,16 @@ class Staffs extends PureComponent {
         <div className="wrapper">
           <h2 className="section-title">برگزار‌کنندگان</h2>
           <div className={styles.staffs}>
-            <div className={styles.staff}>
-              <img className={styles.staffImage} src={testImage} alt="Staff pic" />
-              <h5 className={styles.staffName}>سجاد هاشمیان</h5>
-              <p className={styles.staffDuty}>تیم فنی</p>
-            </div>
-            <div className={styles.staff}>
-              <img className={styles.staffImage} src={testImage} alt="Staff pic" />
-              <h5 className={styles.staffName}>سجاد هاشمیان</h5>
-              <p className={styles.staffDuty}>تیم فنی</p>
-            </div>
-            <div className={styles.staff}>
-              <img className={styles.staffImage} src={testImage} alt="Staff pic" />
-              <h5 className={styles.staffName}>سجاد هاشمیان</h5>
-              <p className={styles.staffDuty}>تیم فنی</p>
-            </div>
-            <div className={styles.staff}>
-              <img className={styles.staffImage} src={testImage} alt="Staff pic" />
-              <h5 className={styles.staffName}>سجاد هاشمیان</h5>
-              <p className={styles.staffDuty}>تیم فنی</p>
-            </div>
-            <div className={styles.staff}>
-              <img className={styles.staffImage} src={testImage} alt="Staff pic" />
-              <h5 className={styles.staffName}>سجاد هاشمیان</h5>
-              <p className={styles.staffDuty}>تیم فنی</p>
-            </div>
-            <div className={styles.staff}>
-              <img className={styles.staffImage} src={testImage} alt="Staff pic" />
-              <h5 className={styles.staffName}>سجاد هاشمیان</h5>
-              <p className={styles.staffDuty}>تیم فنی</p>
-            </div>
+            {Persons.map((person, index) => (
+              <div className={styles.staff} key={index}>
+                <img
+                  className={styles.staffImage}
+                  src={person.avatar}
+                  alt={`تصویر ${person.name}`} />
+                <h5 className={styles.staffName}>{person.name}</h5>
+                <p className={styles.staffDuty}>{person.team}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

@@ -1,0 +1,27 @@
+.scheduleSection {
+  padding: 5rem 10px;
+  text-align: center;
+  background: #ededee;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  background: #fff;
+}
+
+.table thead {
+  background: var(--blue);
+  color: #fff;
+}
+
+.table thead th,
+.table tr,
+.table td {
+  padding: 1rem 10px;
+  border: 2px solid var(--blue);
+}

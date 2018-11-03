@@ -8,6 +8,7 @@ import CountDown from './components/CountDown/CountDown';
 import Staffs from './components/Staffs/Staffs';
 import Gallery from './components/Gallery/Gallery';
 import FormModal from './components/FormModal/FormModal';
+import ScheduleTable from './components/ScheduleTable/ScheduleTable';
 
 class App extends Component {
   state = {
@@ -29,6 +30,7 @@ class App extends Component {
         <Description />
         <Awards />
         <CountDown />
+        <ScheduleTable />
         <Staffs />
         <Gallery />
         <FormModal

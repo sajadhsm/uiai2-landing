@@ -1,0 +1,14 @@
+.footer {
+  padding: 1.5rem 10px;
+  background: #191919;
+  color: #fff;
+  direction: ltr;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
+.footer p:first-child {
+  margin: 0 0 10px;
+}

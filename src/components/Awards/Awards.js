@@ -6,7 +6,7 @@ class Awards extends PureComponent {
     return (
       <section className={styles.awardsSection}>
         <div className="wrapper">
-          <h2>جوایز تیم‌های برتر</h2>
+          <h2 className="section-title">جوایز تیم‌های برتر</h2>
 
           <div className={styles.cards}>
             <div className={styles.card}>

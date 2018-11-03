@@ -13,7 +13,7 @@ class Gallery extends PureComponent {
     return (
       <section className={styles.gallerySection}>
         <div className="wrapper">
-          <h2>تصاویر مسابقه گذشته</h2>
+          <h2 className="section-title">تصاویر مسابقه گذشته</h2>
 
           <div style={{
             display: "block",

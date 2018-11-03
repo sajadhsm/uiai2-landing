@@ -7,7 +7,7 @@ class Staffs extends PureComponent {
     return (
       <section className={styles.staffsSection}>
         <div className="wrapper">
-          <h2>برگزار‌کنندگان</h2>
+          <h2 className="section-title">برگزار‌کنندگان</h2>
           <div className={styles.staffs}>
             <div className={styles.staff}>
               <img className={styles.staffImage} src={testImage} alt="Staff pic" />

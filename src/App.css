@@ -8,3 +8,10 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
+
+.section-title {
+  margin: 0 auto 35px;
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: 3px solid hsl(217, 100%, 54%);
+}

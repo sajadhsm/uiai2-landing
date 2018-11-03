@@ -50,12 +50,15 @@ class CountDown extends Component {
         <div className="wrapper">
           <p className={styles.title}>تا شروع مسابقه</p>
 
-          <p className={styles.clock}>{
-            toPersianNum(this.state.days) + ":" +
-            toPersianNum(this.state.hours) + ":" +
-            toPersianNum(this.state.minutes) + ":" +
-            toPersianNum(this.state.seconds)
-          }</p>
+          <div className={styles.clock}>
+            <span>{toPersianNum(this.state.seconds)}</span>
+            <b>:</b>
+            <span>{toPersianNum(this.state.minutes)}</span>
+            <b>:</b>
+            <span>{toPersianNum(this.state.hours)}</span>
+            <b>:</b>
+            <span>{toPersianNum(this.state.days)}</span>
+          </div>
         </div>
       </section>
     )

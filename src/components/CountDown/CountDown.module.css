@@ -1,8 +1,9 @@
 .countdownSection {
-  padding: 4rem 0;
+  padding: 5rem 0;
   text-align: center;
   background: #191919;
   color: #fff;
+  text-shadow: 0px 0px 55px var(--blue);
 }
 
 .title {
@@ -10,13 +11,23 @@
   font-size: 2rem;
 }
 
-.clock {
-  margin: 0;
-  font-size: 5rem;
+.clock span {
+  display: inline-block;
+  min-width: 6rem;
+  text-align: center;
+  margin: 0 5px;
+  font-size: 4rem;
+}
+.clock b {
+  font-size: 3rem;
 }
 
 @media screen and (max-width: 768px) {
-  .clock {
-    font-size: 3rem;
+  .clock span {
+    min-width: 3rem;
+    font-size: 2.25rem;
+  }
+  .clock b {
+    font-size: 1.75rem;
   }
 }

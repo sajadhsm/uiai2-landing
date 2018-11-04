@@ -1,14 +1,22 @@
 .decriptionSection {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 0;
+  padding: 5rem 10px;
 }
 
 .imageBox {
   flex-basis: 35%;
 }
 .textBox {
-  flex-basis: 64%;
+  flex-basis: 63%;
+}
+.textBox p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.posterImage {
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {

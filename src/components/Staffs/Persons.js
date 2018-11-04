@@ -18,6 +18,8 @@ import stf17 from './images/stf17.jpg';
 import stf18 from './images/stf18.jpg';
 import stf19 from './images/stf19.jpg';
 // import stf20 from './images/stf20.jpg';
+import stf21 from './images/stf21.jpg';
+import defaultAvatar from './images/default.png';
 
 export default [
   {
@@ -93,7 +95,7 @@ export default [
   {
     name: 'مریم کیوانی',
     team: 'اجرایی',
-    avatar: stf14
+    avatar: defaultAvatar
   },
   {
     name: 'سید محمد هاشمی',
@@ -111,6 +113,11 @@ export default [
     avatar: stf18
   },
   {
+    name: 'مهدی جعفرپور',
+    team: 'اجرایی',
+    avatar: stf21
+  },
+  {
     name: 'علی غفرانی',
     team: 'مدیا',
     avatar: stf19
@@ -118,6 +125,6 @@ export default [
   {
     name: 'محمدمحسن احمدی',
     team: 'مدیا',
-    avatar: stf19
+    avatar: defaultAvatar
   },
 ];

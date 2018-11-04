@@ -13,9 +13,9 @@
   flex-basis: 20%;
 }
 .staffImage {
-  max-width: 125px;
+  max-width: 115px;
   border-radius: 50%;
-  filter: saturate(0.3);
+  filter: saturate(0.2);
   transition: filter 0.23s;
 }
 .staffImage:hover {

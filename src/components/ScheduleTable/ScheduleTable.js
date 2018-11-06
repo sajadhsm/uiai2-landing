@@ -18,7 +18,7 @@ class ScheduleTable extends PureComponent {
             <tbody>
               <tr>
                 <td colSpan="2">مرحله اینترنتی</td>
-                <td>۱۵ آبان الی ۸ آذر</td>
+                <td>۱۸ آبان الی ۸ آذر</td>
               </tr>
 
               <tr>

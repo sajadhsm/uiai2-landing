@@ -34,6 +34,8 @@ class Awards extends PureComponent {
               <span>میلیون تومان</span>
             </div>
           </div>
+
+          <p className={styles.notice}>به تیم‌های راه یافته به مرحله حضوری، تیشرت و پیکسل یادبود مسابقه اهدا خواهد شد.</p>
         </div>
       </section>
     );

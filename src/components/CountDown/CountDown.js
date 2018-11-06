@@ -48,7 +48,7 @@ class CountDown extends Component {
     return (
       <section className={styles.countdownSection}>
         <div className="wrapper">
-          <p className={styles.title}>تا پایان مرحله‌ی غیر حضوری</p>
+          <p className={styles.title}>تا پایان مرحله‌ غیرحضوری</p>
 
           <div className={styles.clock}>
             <span>{toPersianNum(this.state.seconds)}</span>

@@ -123,6 +123,11 @@ export default [
     avatar: stf19
   },
   {
+    name: 'امیرعلی معظمی',
+    team: 'مدیا',
+    avatar: defaultAvatar
+  },
+  {
     name: 'محمدمحسن احمدی',
     team: 'مدیا',
     avatar: defaultAvatar

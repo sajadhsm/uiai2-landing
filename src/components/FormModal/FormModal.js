@@ -15,8 +15,12 @@ const reqValidate = value => {
 
 const emailValidate = value => {
   const re = /^([a-zA-Z0-9_\-.]+)@([a-zA-Z0-9_\-.]+)\.([a-zA-Z]{2,5})$/;
-  console.log(re.test(value.toLowerCase()));
   return !value || !re.test(value.toLowerCase()) ? 'ایمیل معتبر نیست.' : null;
+}
+
+const phoneValidate = value => {
+  const re = /^09(0[1-2]|1[0-9]|3[0-9]|2[0-1])[0-9]{3}[0-9]{4}$/;
+  return !value || !re.test(value.toLowerCase()) ? 'شماره معتبر نیست.' : null;
 }
 
 const passwordValidate = value => {
@@ -27,6 +31,7 @@ const passwordValidate = value => {
 class FormModal extends React.Component {
   state = {
     regMessage: "",
+    statusCode: null,
     errors: {
       email: "",
       first_name: "",
@@ -34,7 +39,7 @@ class FormModal extends React.Component {
       last_name: "",
       password: "",
       phone: "",
-      social_id: "",
+      english_full_name: "",
     }
   };
 
@@ -51,14 +56,20 @@ class FormModal extends React.Component {
       return;
     };
 
-    fetch('http://127.0.0.1:8000/api/signup/', {
+    fetch('http://127.0.0.1:8000/uiai2018/api/signup/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(this.formApi.getState().values)
     })
-      .then(response => response.json())
+      .then(response => {
+        console.log(response)
+        this.setState({
+          statusCode: response.status
+        })
+        return response.json();
+      })
       .then(data => {
         this.setState({
           regMessage: data.message
@@ -73,6 +84,9 @@ class FormModal extends React.Component {
   };
 
   render() {
+    const code = this.state.statusCode;
+    const messageColor = code ? code === 201 ? '#4CAF50' : '#f44336' : '';
+
     return (
       <div>
         <Modal
@@ -84,7 +98,9 @@ class FormModal extends React.Component {
           center>
           <div className={styles.modalWrapper}>
             <h3>فرم ثبت‌نام</h3>
-            <p>{this.state.regMessage || 'این فرم جهت ثبت‌نام فرد شرکت‌کننده در مسابقه است.'}</p>
+            <p style={{ color: messageColor }}>
+              {this.state.regMessage || 'این فرم جهت ثبت‌نام فرد شرکت‌کننده در مسابقه است.'}
+            </p>
             <Form id="form-api-form" className={styles.form} getApi={this.setFormApi}>
               <div>
                 <label htmlFor="email">ایمیل:</label>
@@ -137,13 +153,27 @@ class FormModal extends React.Component {
               </div>
 
               <div>
-                <label htmlFor="phone">موبایل:</label>
+                <label htmlFor="english_full_name">نام و نام‌خانوادگی به انگلیسی:</label>
+                <div>
+                  <Text
+                    field="english_full_name"
+                    id="english_full_name"
+                    placeholder="جهت درج در سرتیفیکیت"
+                    initialValue=""
+                    validate={reqValidate} />
+                    <small>{this.state.errors.english_full_name}</small>
+                </div>
+              </div>
+
+              <div>
+                <label htmlFor="phone">شماره موبایل:</label>
                 <div>
                   <Text
                     field="phone"
                     id="phone"
+                    placeholder="09XXXXXXXXX"
                     initialValue=""
-                    validate={reqValidate} />
+                    validate={phoneValidate} />
                     <small>{this.state.errors.phone}</small>
                 </div>
               </div>
@@ -154,21 +184,10 @@ class FormModal extends React.Component {
                   <Text
                     field="institute"
                     id="institute"
+                    placeholder="نام دانشگاه یا مدرسه یا ..."
                     initialValue=""
                     validate={reqValidate} />
                     <small>{this.state.errors.institute}</small>
-                </div>
-              </div>
-
-              <div>
-                <label htmlFor="social_id">کد ملی:</label>
-                <div>
-                  <Text
-                    field="social_id"
-                    id="social_id"
-                    initialValue=""
-                    validate={reqValidate} />
-                    <small>{this.state.errors.social_id}</small>
                 </div>
               </div>
 

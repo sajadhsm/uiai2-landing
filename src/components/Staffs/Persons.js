@@ -68,7 +68,7 @@ export default [
     avatar: stf9
   },
   {
-    name: 'دکتر امین بابادی',
+    name: 'امین بابادی',
     team: 'فنی',
     avatar: stf10
   },

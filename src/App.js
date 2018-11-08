@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import Description from './components/Description/Description';
 import Awards from './components/Awards/Awards';
@@ -27,6 +28,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Navbar onOpenModal={this.onOpenModal} />
         <Hero onOpenModal={this.onOpenModal} />
         <Description />
         <Awards />

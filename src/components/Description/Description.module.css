@@ -10,9 +10,13 @@
 .textBox {
   flex-basis: 63%;
 }
+.textBox h3 {
+  margin: 0 0 0.25rem;
+}
 .textBox p {
+  margin: 0 0 1rem;
   line-height: 1.6;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .posterImage {
@@ -25,5 +29,8 @@
   }
   .decriptionSection > div {
     flex-basis: 1;
+  }
+  .textBox {
+    margin-top: 1rem;
   }
 }

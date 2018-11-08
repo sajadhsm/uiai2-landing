@@ -2,6 +2,7 @@
   "name": "uiai2-landing",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/uiai2018/static/main/static",
   "dependencies": {
     "informed": "^1.10.7",
     "normalize.css": "^8.0.0",

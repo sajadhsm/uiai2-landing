@@ -6,6 +6,7 @@ import Hero from './components/Hero/Hero';
 import Description from './components/Description/Description';
 import Awards from './components/Awards/Awards';
 import CountDown from './components/CountDown/CountDown';
+import Statistics from './components/Statistics/Statistics';
 import Staffs from './components/Staffs/Staffs';
 import Gallery from './components/Gallery/Gallery';
 import FormModal from './components/FormModal/FormModal';
@@ -32,6 +33,7 @@ class App extends Component {
         <Hero onOpenModal={this.onOpenModal} />
         <Description />
         <Awards />
+        <Statistics />
         <CountDown />
         <ScheduleTable />
         <Staffs />

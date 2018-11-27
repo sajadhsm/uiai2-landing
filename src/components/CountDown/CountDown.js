@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import toPersianNum from '../../helpers/toPersianNum';
 import styles from './CountDown.module.css';
 
-const deadLine = "Thu Nov 29 2018 00:00:00 GMT+0330";
+const deadLine = "Sun Dec 2 2018 23:59:59 GMT+0330";
 
 class CountDown extends Component {
   state = {

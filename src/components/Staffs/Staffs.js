@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import styles from './Staffs.module.css';
 import Persons from './Persons';
 import Orgs from './Orgs';
+import Sponsers from './Sponsers';
 
 class Staffs extends PureComponent {
   render() {
@@ -30,6 +31,24 @@ class Staffs extends PureComponent {
                 <h5 className={styles.staffName}>{person.name}</h5>
                 <p className={styles.staffDuty}>{person.team}</p>
               </div>
+            ))}
+          </div>
+
+          <h2 className="section-title" style={{marginTop: '3rem'}}>حامیان مالی</h2>
+          <div className={styles.staffs} style={{marginBottom: '1rem'}}>
+            {Sponsers.map((sponser, index) => (
+              <a
+                href={sponser.link}
+                className={styles.staff}
+                style={{textDecoration: 'none', color: 'inherit'}}
+                key={index}>
+                <img
+                  className={styles.staffImage}
+                  style={{borderRadius: 0}}
+                  src={sponser.avatar}
+                  alt={`تصویر ${sponser.name}`} />
+                <h5 className={styles.staffName}>{sponser.name}</h5>
+              </a>
             ))}
           </div>
         </div>

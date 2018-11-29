@@ -12,15 +12,39 @@ class Staffs extends PureComponent {
           <h2 className="section-title">برگزار‌کنندگان</h2>
           <div className={styles.staffs}>
             {Orgs.map((org, index) => (
-              <div className={styles.staff} key={index}>
+              <a
+                href={org.link}
+                className={styles.staff}
+                style={{ textDecoration: 'none', color: 'inherit' }}
+                key={index}>
                 <img
                   className={styles.staffImage}
                   src={org.avatar}
                   alt={`تصویر ${org.name}`} />
                 <h5 className={styles.staffName}>{org.name}</h5>
-              </div>
+              </a>
             ))}
           </div>
+
+          <h2 className="section-title" style={{ marginTop: '3rem' }}>حامیان مالی</h2>
+          <div className={styles.staffs} style={{ marginBottom: '1rem' }}>
+            {Sponsers.map((sponser, index) => (
+              <a
+                href={sponser.link}
+                className={styles.staff}
+                style={{ textDecoration: 'none', color: 'inherit' }}
+                key={index}>
+                <img
+                  className={styles.staffImage}
+                  style={{ borderRadius: 0 }}
+                  src={sponser.avatar}
+                  alt={`تصویر ${sponser.name}`} />
+                <h5 className={styles.staffName}>{sponser.name}</h5>
+              </a>
+            ))}
+          </div>
+
+          <h2 className="section-title" style={{ marginTop: '3rem' }}>کادر اجرایی</h2>
           <div className={styles.staffs}>
             {Persons.map((person, index) => (
               <div className={styles.staff} key={index}>
@@ -31,24 +55,6 @@ class Staffs extends PureComponent {
                 <h5 className={styles.staffName}>{person.name}</h5>
                 <p className={styles.staffDuty}>{person.team}</p>
               </div>
-            ))}
-          </div>
-
-          <h2 className="section-title" style={{marginTop: '3rem'}}>حامیان مالی</h2>
-          <div className={styles.staffs} style={{marginBottom: '1rem'}}>
-            {Sponsers.map((sponser, index) => (
-              <a
-                href={sponser.link}
-                className={styles.staff}
-                style={{textDecoration: 'none', color: 'inherit'}}
-                key={index}>
-                <img
-                  className={styles.staffImage}
-                  style={{borderRadius: 0}}
-                  src={sponser.avatar}
-                  alt={`تصویر ${sponser.name}`} />
-                <h5 className={styles.staffName}>{sponser.name}</h5>
-              </a>
             ))}
           </div>
         </div>

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import toPersianNum from '../../helpers/toPersianNum';
 import styles from './CountDown.module.css';
 
-const deadLine = "Sun Dec 2 2018 23:59:59 GMT+0330";
+const deadLine = "The Dec 6 2018 09:00:00 GMT+0330";
 
 class CountDown extends Component {
   state = {
@@ -48,7 +48,7 @@ class CountDown extends Component {
     return (
       <section className={styles.countdownSection}>
         <div className="wrapper">
-          <p className={styles.title}>تا پایان مرحله‌ غیرحضوری</p>
+          <p className={styles.title}>تا شروع مرحله حضوری</p>
 
           <div className={styles.clock}>
             <span>{toPersianNum(this.state.seconds)}</span>

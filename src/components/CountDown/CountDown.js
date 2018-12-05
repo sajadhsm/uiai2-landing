@@ -2,14 +2,15 @@ import React, { Component } from 'react';
 import toPersianNum from '../../helpers/toPersianNum';
 import styles from './CountDown.module.css';
 
-const deadLine = "The Dec 6 2018 09:00:00 GMT+0330";
+let countDownInterval;
+const deadLine = "The Dec 6 2018 08:00:00 GMT+0330";
 
 class CountDown extends Component {
   state = {
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0
+    days: '00',
+    hours: '00',
+    minutes: '00',
+    seconds: '00'
   };
 
   getTimeRemaining = () => {
@@ -31,8 +32,15 @@ class CountDown extends Component {
   updateClock = () => {
     const t = this.getTimeRemaining();
 
+    if (
+      t.days <= 0 &&
+      t.hours <= 0 &&
+      t.minutes <= 0 &&
+      t.seconds <= 0
+    ) clearInterval(countDownInterval);
+
     this.setState({
-      days: t.days,
+      days: ('0' + t.days).slice(-2),
       hours: ('0' + t.hours).slice(-2),
       minutes: ('0' + t.minutes).slice(-2),
       seconds: ('0' + t.seconds).slice(-2)
@@ -40,8 +48,17 @@ class CountDown extends Component {
   }
 
   componentDidMount = () => {
+    const t = this.getTimeRemaining();
+
+    if (
+      t.days <= 0 &&
+      t.hours <= 0 &&
+      t.minutes <= 0 &&
+      t.seconds <= 0
+    ) return;
+
     this.updateClock();
-    setInterval(this.updateClock, 1000);
+    countDownInterval = setInterval(this.updateClock, 1000);
   }
 
   render() {

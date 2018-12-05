@@ -19,6 +19,19 @@ import stf18 from './images/stf18.jpg';
 import stf19 from './images/stf19.jpg';
 // import stf20 from './images/stf20.jpg';
 import stf21 from './images/stf21.jpg';
+import adelnia from './images/adelnia.jpg';
+import sharifi from './images/sharifi.jpg';
+import razavi from './images/razavi.jpg';
+import rabiei from './images/rabiei.jpg';
+import pazan from './images/pazan.jpg';
+import soleimani from './images/soleimani.jpg';
+import alihosseini from './images/alihosseini.jpg';
+import shiri from './images/shiri.jpg';
+import mohammadi from './images/mohammadi.jpg';
+import fazlikhani from './images/fazlikhani.jpg';
+import akhgari from './images/akhgari.jpg';
+import vahabi from './images/vahabi.jpg';
+
 import defaultAvatar from './images/default.png';
 
 export default [
@@ -93,11 +106,6 @@ export default [
     avatar: stf14
   },
   {
-    name: 'مریم کیوانی',
-    team: 'اجرایی',
-    avatar: defaultAvatar
-  },
-  {
     name: 'سید محمد هاشمی',
     team: 'اجرایی',
     avatar: stf16
@@ -116,6 +124,76 @@ export default [
     name: 'مهدی جعفرپور',
     team: 'اجرایی',
     avatar: stf21
+  },
+  {
+    name: 'مهسا سلیمانی',
+    team: 'اجرایی',
+    avatar: soleimani
+  },
+  {
+    name: 'غزال ربیعی',
+    team: 'اجرایی',
+    avatar: rabiei
+  },
+  {
+    name: 'سید محمدرضا رضوی',
+    team: 'اجرایی',
+    avatar: razavi
+  },
+  {
+    name: 'ریحانه شریفی',
+    team: 'اجرایی',
+    avatar: sharifi
+  },
+  {
+    name: 'حدیثه فضلی‌خانی',
+    team: 'اجرایی',
+    avatar: fazlikhani
+  },
+  {
+    name: 'معین‌الدین علی‌حسینی',
+    team: 'اجرایی',
+    avatar: alihosseini
+  },
+  {
+    name: 'رضاپازن',
+    team: 'اجرایی',
+    avatar: pazan
+  },
+  {
+    name: 'فرزانه محمدی',
+    team: 'اجرایی',
+    avatar: mohammadi
+  },
+  {
+    name: 'رضا شیری',
+    team: 'اجرایی',
+    avatar: shiri
+  },
+  {
+    name: 'امید اخگری',
+    team: 'اجرایی',
+    avatar: akhgari
+  },
+  {
+    name: 'مهتاب عادل‌نیا',
+    team: 'اجرایی',
+    avatar: adelnia
+  },
+  {
+    name: 'فاطمه وهابی',
+    team: 'اجرایی',
+    avatar: vahabi
+  },
+  {
+    name: 'فاطمه بیاتیانی',
+    team: 'اجرایی',
+    avatar: defaultAvatar
+  },
+  {
+    name: 'مریم کیوانی',
+    team: 'اجرایی',
+    avatar: defaultAvatar
   },
   {
     name: 'علی غفرانی',

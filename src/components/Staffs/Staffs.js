@@ -47,13 +47,13 @@ class Staffs extends PureComponent {
           <h2 className="section-title" style={{ marginTop: '3rem' }}>کادر اجرایی</h2>
           <div className={styles.staffs}>
             {Persons.map((person, index) => (
-              <div className={styles.staff} key={index}>
+              <div className={styles.smallCol} key={index}>
                 <img
-                  className={styles.staffImage}
+                  className={styles.smallColImage}
                   src={person.avatar}
                   alt={`تصویر ${person.name}`} />
-                <h5 className={styles.staffName}>{person.name}</h5>
-                <p className={styles.staffDuty}>{person.team}</p>
+                <h5 className={styles.smallColName}>{person.name}</h5>
+                <p className={styles.smallColDuty}>{person.team}</p>
               </div>
             ))}
           </div>

@@ -28,3 +28,26 @@
 .staffDuty {
   margin: 0;
 }
+
+.smallCol {
+  box-sizing: border-box;
+  padding: 0.5rem;
+  flex-basis: 10%;
+}
+.smallColImage {
+  max-width: 85px;
+  border-radius: 50%;
+  filter: saturate(0.6);
+  transition: filter 0.23s;
+}
+.smallColImage:hover {
+  filter: saturate(1);
+}
+.smallColName {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+.smallColDuty {
+  margin: 0;
+  font-size: 0.85rem;
+}

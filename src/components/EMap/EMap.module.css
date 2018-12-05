@@ -1,0 +1,18 @@
+.mapSection {
+  padding: 5rem 10px;
+  text-align: center;
+}
+
+.biggerMapLink {
+  font-size: 0.8rem;
+  color: hsl(217, 100%, 54%);
+  text-decoration: none;
+}
+.biggerMapLink:hover {
+  color: hsl(217, 100%, 40%);
+}
+
+.mapIFrame {
+  margin-bottom: 0.5rem;
+  border: 3px solid hsl(217, 100%, 54%);
+}

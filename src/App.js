@@ -11,6 +11,7 @@ import Staffs from './components/Staffs/Staffs';
 import Gallery from './components/Gallery/Gallery';
 import FormModal from './components/FormModal/FormModal';
 import ScheduleTable from './components/ScheduleTable/ScheduleTable';
+import EMap from './components/EMap/EMap';
 import Footer from './components/Footer/Footer';
 
 class App extends Component {
@@ -38,6 +39,7 @@ class App extends Component {
         <ScheduleTable />
         <Staffs />
         <Gallery />
+        <EMap />
         <Footer />
         <FormModal
           open={this.state.modalOpen}
